@@ -1,7 +1,19 @@
 aid: betternight
 name: BetterNight
-description: 'BetterNight is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'BetterNight is a San Diego, California virtual-care sleep health company
+  that diagnoses and treats obstructive sleep apnea end to end: telemedicine consults
+  with sleep physicians, home sleep testing devices shipped to the patient, board-certified
+  interpretation and therapy recommendation, home delivery of PAP and oral appliance
+  therapy, and ongoing coaching by sleep specialists and respiratory therapists. It
+  also offers a cognitive behavioral therapy program for insomnia and remote patient
+  monitoring of PAP adherence. The company sells to individuals as well as to physicians,
+  cardiologists, ENT practices, clinics, health plans and ACOs, employers, and DOT/commercial
+  transportation programs. It reports roughly 300 sleep health professionals, Joint
+  Commission accreditation held for over 15 years, and SOC 2 Type II compliance, and
+  in 2026 acquired Coastal Sleep Diagnostics and Epoch Sleep Centers. BetterNight is
+  a healthcare services operator, not an API platform: it publishes no developer program,
+  API documentation, or machine-readable specification.'
+image: https://static1.squarespace.com/static/5de55dfd24b1dd71d89c17f4/t/646ba565a803c661e2f30a09/1684776297362/BN_Social-Preview_2023.jpg?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/betternight/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +24,14 @@ created: '2026-08-07'
 modified: '2026-08-07'
 tags:
 - Company
+- Health
+- Digital Health
+- Telehealth
+- Sleep Health
+- Sleep Apnea
+- Remote Patient Monitoring
+- Medical Devices
+- Virtual Care
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +39,61 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/betternight-domain-security.yml
 - type: Website
+  url: https://betternight.com/
+- type: Blog
+  url: https://betternight.com/news
+- type: BlogRSS
+  url: https://betternight.com/news?format=rss
+- type: Support
+  url: https://www.support.betternight.com/
+- type: PrivacyPolicy
+  url: https://betternight.com/privacy-policy
+- type: ContactUs
+  url: https://betternight.com/contact-us
+- type: Careers
+  url: https://betternight.com/careers
+- type: Locations
+  url: https://betternight.com/locations
+- type: LinkedIn
+  url: https://www.linkedin.com/company/betternight/
+- type: PatientPortal
+  url: https://sleep.betternight.com/signin
+- type: Compliance
+  url: https://betternight.com/news/betternight-achieves-soc-2-certification-to-demonstrate-our-commitment-to-security
+- type: LLMsTxt
+  url: llms/betternight-llms.txt
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/betternight_stock/
+x-enrichment:
+  date: '2026-08-07'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    BetterNight is a virtual-care sleep clinic and DME operator whose only software
+    surfaces are two robots-disallowed single-page login apps (sleep. and admin.
+    betternight.com) that answer HTTP 200 with the identical 63KB HTML shell for every
+    path including /openapi.json and /.well-known/agent-card.json; the marketing site
+    is Squarespace with no /developers, /api, or docs subdomain in DNS.
+  evidence:
+    - url: https://betternight.com/developers
+      status: 404
+    - url: https://betternight.com/api
+      status: 404
+    - url: https://betternight.com/llms.txt
+      status: 404
+    - url: https://betternight.com/.well-known/agent-card.json
+      status: 404
+    - url: https://sleep.betternight.com/openapi.json
+      status: 200
+    - url: https://sleep.betternight.com/robots.txt
+      status: 200
+    - url: https://admin.betternight.com/openapi.json
+      status: 200
+  checked: '2026-08-07'
