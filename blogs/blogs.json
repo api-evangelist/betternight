@@ -1,0 +1,21 @@
+{
+  "repo": "betternight",
+  "feeds": [
+    {
+      "source": "https://betternight.com/",
+      "feed_url": "https://betternight.com/home?format=rss",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://betternight.com/news",
+      "feed_url": "https://betternight.com/news?format=rss",
+      "title": "",
+      "saved": 1,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 1,
+  "fetched": "2026-08-15T12:22:01Z"
+}
