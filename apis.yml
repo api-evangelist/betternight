@@ -13,6 +13,17 @@ description: 'BetterNight is a San Diego, California virtual-care sleep health c
   in 2026 acquired Coastal Sleep Diagnostics and Epoch Sleep Centers. BetterNight is
   a healthcare services operator, not an API platform: it publishes no developer program,
   API documentation, or machine-readable specification.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://static1.squarespace.com/static/5de55dfd24b1dd71d89c17f4/t/646ba565a803c661e2f30a09/1684776297362/BN_Social-Preview_2023.jpg?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/betternight/refs/heads/main/apis.yml
 x-type: company
