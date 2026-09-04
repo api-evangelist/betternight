@@ -24,6 +24,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://static1.squarespace.com/static/5de55dfd24b1dd71d89c17f4/t/646ba565a803c661e2f30a09/1684776297362/BN_Social-Preview_2023.jpg?format=1500w
 url: https://raw.githubusercontent.com/api-evangelist/betternight/refs/heads/main/apis.yml
 x-type: company
